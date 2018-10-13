@@ -5,9 +5,14 @@
 <head>
 	<meta charset="UTF-8"></meta>
 	<title>index</title>
+	
+	<!-- 引入jquery js -->
+	<script src='${pageContext.request.contextPath}/jquery/3.3.1/jquery.min.js'></script>
+	<!-- 引入moment js -->
+	<script src='${pageContext.request.contextPath}/moment/2.22.2/moment.min.js'></script>
+	
+	<!-- 引入fullcalendar相关js和css -->
 	<link rel='stylesheet' href='${pageContext.request.contextPath}/fullcalendar/3.9.0/fullcalendar.css' />
-	<script src='${pageContext.request.contextPath}/fullcalendar/3.9.0/lib/jquery.min.js'></script>
-	<script src='${pageContext.request.contextPath}/fullcalendar/3.9.0/lib/moment.min.js'></script>
 	<script src='${pageContext.request.contextPath}/fullcalendar/3.9.0/fullcalendar.js'></script>
 	
 	<!-- 引入easyui相关js和css -->
