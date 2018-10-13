@@ -32,24 +32,37 @@ $(function() {
 		},
 		customButtons: {
 	        addEventButton: {
-	          text: 'add event...',
+	          text: 'add event',
 	          click: function() {
-	            var dateStr = prompt('Enter a date in YYYY-MM-DD format');
-	            var date = moment(dateStr);
-
-	            if (date.isValid()) {
-	              $('#calendar').fullCalendar('renderEvent', {
-	                title: 'dynamic event',
-	                start: date,
-	                allDay: true
-	              });
-	              alert('Great. Now, update your database...');
-	            } else {
-	              alert('Invalid date.');
-	            }
+//	            var dateStr = prompt('Enter a date in YYYY-MM-DD format');
+//	            var date = moment(dateStr);
+//
+//	            if (date.isValid()) {
+//	              $('#calendar').fullCalendar('renderEvent', {
+//	                title: 'dynamic event',
+//	                start: date,
+//	                allDay: true
+//	              });
+//	              alert('Great. Now, update your database...');
+//	            } else {
+//	              alert('Invalid date.');
+//	            }
+	        	  
+	        	  $('#dlg').dialog('open').dialog('setTitle','Edit Event');
+	        	  $('#fm').form('clear');
 	          }
 	        }
 		}
 	})
 
 });
+
+
+function saveEvent(){
+	console.log("save event.");
+	// 与后台进行数据交互
+	// 关闭窗口
+	$('#dlg').dialog('close');
+	
+	// 重新渲染前台页面
+}
