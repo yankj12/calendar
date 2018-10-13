@@ -10,6 +10,12 @@
 	<script src='${pageContext.request.contextPath}/fullcalendar/3.9.0/lib/moment.min.js'></script>
 	<script src='${pageContext.request.contextPath}/fullcalendar/3.9.0/fullcalendar.js'></script>
 	
+	<!-- 引入easyui相关js和css -->
+	<%-- <script src="${pageContext.request.contextPath}/easyui/jquery.min.js" type="text/javascript"></script> --%>
+	<script src="${pageContext.request.contextPath}/easyui/jquery.easyui.min.js" type="text/javascript"></script>
+	<link href="${pageContext.request.contextPath}/easyui/themes/default/easyui.css" rel="stylesheet" type="text/css" />
+	<link href="${pageContext.request.contextPath}/easyui/themes/icon.css" rel="stylesheet" type="text/css" />
+	
 	<script src='${pageContext.request.contextPath}/index.js'></script>
 
 	<style>
